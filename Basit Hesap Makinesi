@@ -1,0 +1,21 @@
+print("""
+İşlemler:
+1. Toplama
+2. Çıkarma
+3. Çarpma
+4: Bölme
+""")
+
+x = int(input("Birinci Sayı: "))
+y = int(input("İkinci Sayı: "))
+
+islem = input("İşlem Seçiniz: ")
+
+if islem == "1":
+    print("{} + {} = {}".format(x,y,x+y))
+elif islem == "2":
+    print("{} - {} = {}".format(x,y,x-y))
+elif islem == "3":
+    print("{} * {} = {}".format(x,y,x*y))
+else:
+    print("{} / {} = {}".format(x,y,x/y))

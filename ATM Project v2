@@ -1,0 +1,35 @@
+print("""
+ATM' YE Hoşgeldiniz
+*********************
+Yapacağınız İşlemler 
+1. Bakiye Sorgulama
+2. Para Çekme
+3. Para Yatırma
+4. Çıkış
+*********************
+""")
+
+bakiye = 1000
+islem = input("Yapmak İstediğiniz İşlemi Seçiniz.")
+
+while True:
+    if islem == "4":
+        print("Çıkış yapılıyor")
+        break;
+    elif islem == "1":
+        print("Bakiye: ", bakiye)
+        break;
+    elif islem == "2":
+        miktar = int(input("Çekmek istediğiniz miktarı giriniz: "))
+        if miktar > bakiye:
+            print("Yetersiz Bakiye")
+            break;
+        print("İşlem gerçekleştirildi. Yeni Bakiye: ", bakiye - miktar)
+        break;
+    elif (islem == "3") :
+        miktar = int(input("Yatırmak istediğiniz miktarı giriniz: "))
+        print("İşlem gerçekleştirildi. Yeni Bakiye: ", bakiye + miktar)
+        break;
+    else:
+        print("Geçersiz İşlem")
+        break;

@@ -1,0 +1,11 @@
+while True:
+    sayi = input("Faktöriyelini Bulmak İstediğiniz Sayı: ")
+    if sayi == "q":
+        break;
+    else:
+        sayi = int(sayi)
+        faktoriyel = 1
+
+        for i in range(2,(sayi+1)):
+            faktoriyel = faktoriyel * i
+            print(faktoriyel)
